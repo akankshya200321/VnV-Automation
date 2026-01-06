@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            
+            body{
+                font-family: Ariel, sans-serif;
+                background: #f1d5a5 ;
+                margin: 0;
+            }
+            header{
+                background: #5f4007;
+                color:aliceblue;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .form-section {
+                display: flex;
+                justify-content: center;
+                padding: 40px;
+            }
+            .club-form{
+                background: white;
+                padding: 30px;
+                width: 350px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+            .club-form input,
+            .club-form textarea{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+               
+            }
+            .radio-group{
+               display: inline-flex;
+               gap: 6px;
+               align-items: center;
+            }
+            
+            .club-form button{
+                background: #39210e;
+                padding: 12px;
+                width: 20%;
+                color: white;
+                border: none;
+                cursor: pointer;
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>Registration form</h1>
+        <p><i>"please be a part of our club"</i></p>
+    </header>
+ 
+<section class="form-section">
+    <form class="club-form">
+       Name <input type="text" name="Name" placeholder="Full name" required><br>
+        Email<input type="email" name="Email" placeholder="enter your email-id" required><br>
+        Department<input type="text" name="Department" placeholder="your department "><br>
+        <p>Gender</p>
+        <label>Male
+            <input type="radio" name="Gender" value="male">
+        </label>
+        <label>Female
+            <input type="radio" name="Gender" value="female">
+        </label>
+        <label>Others
+            <input type="radio" name="Gender" value="other">
+        </label><br><br>
+        <button type="submit">Register</button>
+        
+    </form>
+</section>
+
+</selection>
+</body>
+</html>
