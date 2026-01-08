@@ -1,0 +1,40 @@
+SQL:
+
+
+create database gcip;
+create database wipro;
+use gcip;
+create table student(
+id INT primary key;
+Name varchar(225),
+city varchar(255),
+age INT;
+);
+
+INSERT INTO student VALUES(1,'ajay','kerela',20 ),(2,'khamy','jk',21 );
+
+UPDATE student
+SET age=22
+WHERE id=2;
+
+DELETE FROM student Where age>20;
+
+INSERT INTO student VALUES(3,'amit','mp',25 ),(4,'khole','manipur',29 );
+
+SELECT * FROM student;
+SELECT name FROM student WHERE id=1;
+SELECT MAX (age) FROM student;
+
+ALTER TABLE student
+ADD COLUMN Marks INT;
+
+UPDATE student
+SET Make=90
+WHERE id=2;
+
+UPDATE student
+SET Make=78
+WHERE id=1;
+
+ALTER TABLE student RENAME COLUMN name TO firstname;
+
